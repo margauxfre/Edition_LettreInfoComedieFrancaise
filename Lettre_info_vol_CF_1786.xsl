@@ -704,8 +704,8 @@
     <!-- pour afficher le numéro du folio sur la gauche, en italique -->
     <xsl:template match="pb" mode="#all">
         <br/>
-        <p style="text-align: left; font-style:italic;">
-            <xsl:value-of select="pb"/>page n° <xsl:value-of select="@n"/></p>
+        <span style="text-align: left; font-style:italic;">
+            <xsl:value-of select="pb"/>page n° <xsl:value-of select="@n"/></span>
         <br/>
     </xsl:template>
 
@@ -747,9 +747,9 @@
 
     <!-- pour afficher les signatures sur la droite, en italique -->
     <xsl:template match="signed/persName" mode="#all">
-        <p style="text-align: right; font-style:italic;">
+        <span style="font-style:italic; display: block; text-align: right;">
             <xsl:copy-of select="."/>
-        </p>
+        </span>
     </xsl:template>
 
 </xsl:stylesheet>
