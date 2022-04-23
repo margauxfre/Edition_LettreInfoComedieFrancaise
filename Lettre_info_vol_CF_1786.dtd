@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- entités des abbréviations avec exposant -->
+<!ENTITY ayant "<choice><abbr>ay<hi rend='sup'>t</hi></abbr><expan>ay<ex>an</ex>t</expan></choice>">
+<!ENTITY demeurant "<choice><abbr>dem<hi rend='sup'>t</hi></abbr><expan>dem<ex>euran</ex>t</expan></choice>">
+<!ENTITY sieur "<choice><abbr>s<hi rend='sup'>r</hi></abbr><expan>s<ex>ieu</ex>r</expan></choice>">
+<!ENTITY ordonnance "<choice><abbr>ord<hi rend='sup'>ce</hi></abbr><expan>ord<ex>onnan</ex>ce</expan></choice>">
+<!ENTITY demoiselle-1 "<choice><abbr>d<hi rend='sup'>elle</hi></abbr><expan>d<ex>emois</ex>elle</expan></choice>">
+<!ENTITY demoiselle-2 "<choice><abbr>dem<hi rend='sup'>lle</hi></abbr><expan>dem<ex>oise</ex>lle</expan></choice>">
+<!ENTITY Baptiste "<choice><abbr>B<hi rend='sup'>te</hi></abbr><expan>B<ex>aptis</ex>te</expan></choice>">
+<!ENTITY Madame "<choice><abbr>M<hi rend='sup'>de</hi></abbr><expan>M<ex>a</ex>d<ex>am</ex>e</expan></choice>">
+<!ENTITY monsieur "<choice><abbr>M<hi rend='sup'>r</hi></abbr><expan>m<ex>onsieu</ex>r</expan></choice>">
+<!ENTITY expédition-1 "<choice><abbr>exped<hi rend='sup'>on</hi></abbr><expan>exped<ex>iti</ex>on</expan></choice>">
+<!ENTITY déposition "<choice><abbr>depo<hi rend='sup'>on</hi></abbr><expan>dépo<ex>siti</ex>on</expan></choice>">
+
+<!-- entités des abbréviations avec tilde -->
+<!ENTITY paroisse "<choice><abbr>psse~</abbr><expan>p<ex>aroi</ex>sse</expan></choice>">
+<!ENTITY chevalier "<choice><abbr>cher~</abbr><expan>p<ex>aroi</ex>sse</expan></choice>">
+<!ENTITY particulier "<choice><abbr>per~</abbr><expan>p<ex>articuli</ex>er</expan></choice>">
+<!ENTITY particuliers "<choice><abbr>pers~</abbr><expan>p<ex>articuli</ex>ers</expan></choice>">
+<!ENTITY expédition-2 "<choice><abbr>expedon~</abbr><expan>expéd<ex>iti</ex>on</expan></choice>">
+<!ENTITY huissier "<choice><abbr>her~</abbr><expan>h<ex>uissi</ex>er</expan></choice>">
+<!ENTITY Information "<choice><abbr>Informaon~</abbr><expan>Informa<ex>ti</ex>on</expan></choice>">
+
+<!-- entités avec tile et exposant -->
+<!ENTITY conseiller "<choice><abbr>Con<hi rend='sup'>er~</hi></abbr><expan>con<ex>seill</ex>er</expan></choice>">
+<!ENTITY commissaire "<choice><abbr>Comm~<hi rend='sup'>re</hi></abbr><expan>comm<ex>issai</ex>re</expan></choice>">
+
+<!-- abbréviations sans tilde ni exposant -->
+<!ENTITY fait "<choice><abbr>ft</abbr><expan>f<ex>ai</ex>t</expan></choice>">
+<!ENTITY faite "<choice><abbr>fte</abbr><expan>f<ex>ai</ex>te</expan></choice>">
+<!ENTITY audit "<choice><abbr>aud</abbr><expan>au<ex> </ex>d<ex>it</ex></expan></choice>">
+<!ENTITY ledit "<choice><abbr>led</abbr><expan>le<ex> </ex>d<ex>it</ex></expan></choice>">
+<!ENTITY ladite "<choice><abbr>lad</abbr><expan>la<ex> </ex>d<ex>ite</ex></expan></choice>">
+<!ENTITY dudit "<choice><abbr>dud</abbr><expan>du<ex> </ex>d<ex>it</ex></expan></choice>">
+<!ENTITY sadite "<choice><abbr>sad</abbr><expan>sa<ex> </ex>d<ex>ite</ex></expan></choice>">
+<!ENTITY devant "<choice><abbr>det</abbr><expan>de<ex>van</ex>t</expan></choice>">
+<!ENTITY pour "<choice><abbr>pr</abbr><expan>p<ex>ou</ex>r</expan></choice>">
+<!ENTITY sergent "<choice><abbr>sergt</abbr><expan>serg<ex>en</ex>t</expan></choice>">
+<!ENTITY Saint "<choice><abbr>St</abbr><expan>S<ex>ain</ex>t</expan></choice>">
+<!ENTITY Sainte "<choice><abbr>Ste</abbr><expan>S<ex>ain</ex>te</expan></choice>">
+<!ENTITY Expédié "<choice><abbr>Exped</abbr><expan>Exped<ex>ié</ex></expan></choice>">
+<!ENTITY déposé "<choice><abbr>dep</abbr><expan>dep<ex>osé</ex></expan></choice>">
+<!ENTITY Châtelet "<choice><abbr>Chlet</abbr><expan>Ch<ex>âte</ex>let</expan></choice>">
+<!ENTITY nommé "<choice><abbr>né</abbr><expan>n<ex>omm</ex>é</expan></choice>">
+
+<!-- régularisation des noms et des mots dont l'orthographe est courante au XVIIIe mais a évolué -->
+<!ENTITY deBasseux "<choice><orig>Debasseux</orig><reg>de Basseux</reg></choice>">
+<!ENTITY leTord "<choice><orig>Letort</orig><reg>le Tord</reg></choice>">
+<!ENTITY Goudouin "<choice><orig>Goudain</orig><reg>Goudouin</reg></choice>">
+<!ENTITY Français "<choice><orig>francois</orig><reg>Français</reg></choice>">
+<!ENTITY Française "<choice><orig>francoise</orig><reg>Française</reg></choice>">
+<!ENTITY boîte-1 "<choice><orig>boête</orig><reg>boîte</reg></choice>">
+<!ENTITY boîte-2 "<choice><orig>boëte</orig><reg>boîte</reg></choice>">
+<!ENTITY mille "<choice><orig>mil</orig><reg>mille</reg></choice>">
+<!ENTITY sous "<choice><orig>sols</orig><reg>sous</reg></choice>">
+<!ENTITY assez "<choice><orig>assés</orig><reg>assez</reg></choice>">
+<!ENTITY minutes "<choice><orig>minuttes</orig><reg>minutes</reg></choice>">
+<!ENTITY aperçu "<choice><orig>apperçu</orig><reg>aperçu</reg></choice>">
+<!ENTITY savoir "<choice><orig>scavoir</orig><reg>savoir</reg></choice>">
+<!ENTITY aiguilles "<choice><orig>éguilles</orig><reg>aiguilles</reg></choice>">
+<!ENTITY sût "<choice><orig>scut</orig><reg>sût</reg></choice>">
+<!ENTITY Geneviève "<choice><orig>Gennevieve</orig><reg>Geneviève</reg></choice>">
+<!ENTITY faite "<choice><orig>faitte</orig><reg>faite</reg></choice>">
+
+<!-- ponctuation -->
+<!ENTITY espace "<choice><orig></orig><reg> </reg></choice>">
+<!ENTITY apostrophe-1 "<choice><orig></orig><reg>'</reg></choice>">
+<!ENTITY apostrophe-2 "<choice><orig> </orig><reg>'</reg></choice>">
+<!ENTITY tiret "<choice><orig> </orig><reg>-</reg></choice>">
+<!ENTITY tiret-2 "<choice><orig></orig><reg>-</reg></choice>">
+<!ENTITY deux-points "<choice><orig></orig><reg> : </reg></choice>">
+<!ENTITY virgule "<choice><orig></orig><reg>,</reg></choice>">
+<!ENTITY point "<choice><orig> </orig><reg>. </reg></choice>">
+
+<!-- accentuation -->
+<!ENTITY à "<choice><orig>a</orig><reg>à</reg></choice>">
+<!ENTITY â "<choice><orig>a</orig><reg>â</reg></choice>">
+<!ENTITY ç "<choice><orig>c</orig><reg>ç</reg></choice>">
+<!ENTITY é "<choice><orig>e</orig><reg>é</reg></choice>">
+<!ENTITY è "<choice><orig>e</orig><reg>è</reg></choice>">
+<!ENTITY ê "<choice><orig>e</orig><reg>ê</reg></choice>">
+<!ENTITY î "<choice><orig>i</orig><reg>î</reg></choice>">
+<!ENTITY ô "<choice><orig>o</orig><reg>ô</reg></choice>">
+<!ENTITY ù "<choice><orig>u</orig><reg>ù</reg></choice>">
+
+<!-- lettres -->
+<!ENTITY aA "<choice><orig>a</orig><reg>A</reg></choice>">
+<!ENTITY bB "<choice><orig>b</orig><reg>B</reg></choice>">
+<!ENTITY lL "<choice><orig>l</orig><reg>L</reg></choice>">
+<!ENTITY qQ "<choice><orig>q</orig><reg>Q</reg></choice>">
+<!ENTITY tT "<choice><orig>t</orig><reg>T</reg></choice>">
+<!ENTITY fF "<choice><orig>f</orig><reg>F</reg></choice>">
+
+<!ENTITY Cc "<choice><orig>C</orig><reg>c</reg></choice>">
+<!ENTITY Dd "<choice><orig>D</orig><reg>d</reg></choice>">
+<!ENTITY Gg "<choice><orig>G</orig><reg>g</reg></choice>">
+<!ENTITY Ii "<choice><orig>I</orig><reg>i</reg></choice>">
+<!ENTITY Nn "<choice><orig>N</orig><reg>n</reg></choice>">
+<!ENTITY Rr "<choice><orig>R</orig><reg>r</reg></choice>">
+
+<!ENTITY oa "<choice><orig>o</orig><reg>a</reg></choice>">
+<!ENTITY ïy "<choice><orig>ï</orig><reg>y</reg></choice>">
+<!ENTITY iy "<choice><orig>i</orig><reg>y</reg></choice>">
+<!ENTITY yi "<choice><orig>y</orig><reg>i</reg></choice>">
+<!ENTITY zs "<choice><orig>z</orig><reg>s</reg></choice>">
+<!ENTITY h "<choice><orig></orig><reg>h</reg></choice>">
+<!ENTITY p "<choice><orig></orig><reg>p</reg></choice>">
+
+<!-- graphie fautive -->
+<!ENTITY a "<choice><sic>à</sic><corr>a</corr></choice>">

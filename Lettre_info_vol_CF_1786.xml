@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "Lettre_info_vol_CF_1786.dtd">
+<?xml-model href="ODD_Lettre_info_vol_CF_1786.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="ODD_Lettre_info_vol_CF_1786.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Lettre d'information au sujet d'un vol de montre à la Comédie-Française à la fin
+               du XVIIIe siècle</title>
+            <author><orgName ref="#HotelLandelle">Hôtel du commissaire de police <persName
+                     ref="#PierreLandelle">Pierre Landelle</persName></orgName></author>
+         </titleStmt>
+         <editionStmt>
+            <edition>Édition dans le cadre du devoir de XML-TEI du master 2 TNAH de l'École
+               nationale des chartes <date when="2022-02">février 2022</date></edition>
+            <respStmt>
+               <resp>Transcription et encodage de la source</resp>
+               <persName xml:id="MargauxFaure">
+                  <forename>Margaux</forename>
+                  <surname>Faure</surname>
+               </persName>
+            </respStmt>
+         </editionStmt>
+         <publicationStmt>
+            <!-- remplissage fictif, dans le cadre de l'exercice -->
+            <publisher>École nationale des chartes</publisher>
+            <pubPlace>Paris</pubPlace>
+            <date when="2022-01">Janvier 2022</date>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/3.0/deed.fr">Licence
+                  Creative Commons Attribution-partage dans les mêmes conditions</licence>
+            </availability>
+         </publicationStmt>
+
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <country key="FR">France</country>
+                  <settlement>Paris</settlement>
+                  <institution>Archives nationales (CARAN)</institution>
+                  <repository>Série Y : archives du Châtelet de Paris</repository>
+                  <idno type="cote">Y 14038B, 7 et 8 avril 1786</idno>
+               </msIdentifier>
+               <head><title>Information au sujet du vol de montre fait à la <persName
+                        ref="#JeanneDeBasseux">demoiselle de Basseux</persName> et dont est prévenu
+                     le nommé <persName ref="#VincentLeTord">Letort</persName></title>
+                  <date when="1786-04-07">7 et 8 avril 1786</date>
+               </head>
+               <msContents>
+                  <msItem>
+                     <respStmt>
+                        <resp>Rédaction du document</resp>
+                        <orgName ref="HotelLandelle">Hôtel de police du commissaire <persName
+                              ref="#PierreLandelle">Landelle</persName></orgName>
+                        <note>Ce type de document est rédigé par un clerc travaillant auprès du
+                           commissaire de police en charge de l'affaire. Corps très mal connu des
+                           historiens, l'auteur du document reste pour nous anonyme, aussi nous
+                           a-t-il semblé cohérent d'attribuer son existence à l'hôtel du commissaire
+                           où travaillait son rédacteur.</note>
+                     </respStmt>
+                     <respStmt>
+                        <resp>Signature du document</resp>
+                        <persName ref="#PierreLandelle">Pierre Landelle</persName>
+                        <persName ref="#JeanneDeBasseux">Jeanne de Basseux</persName>
+                        <persName ref="#JeanDeBasseux">Jean de Basseux</persName>
+                        <persName ref="#JeanGoudouin">Jean Goudouin</persName>
+                        <persName ref="#MarcellinCourtois">Marcellin Courtois</persName>
+                        <persName ref="#EtienneLeBon">Etienne Le Bon</persName>
+                        <note>La lettre d'information, émise à la requête du Procureur du Roi,
+                           contient les déclarations des témoins de l'évènement ayant déclenché le
+                           recours aux autorités publiques, dont la démarche se solde par la
+                           rédaction d'un procès-verbal. Ici, la lettre d'information des 7 et 8
+                           avril 1786 expose les témoignages de plusieurs particuliers à propos
+                           d'une tentative de vol à la Comédie-Française, un soir de représentation
+                           du <title ref="#Figaro">Mariage de Figaro</title> de Beaumarchais.</note>
+                     </respStmt>
+                     <textLang mainLang="fre">Français</textLang>
+                  </msItem>
+               </msContents>
+
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support>Papier timbré<note>Le timbre de la Généralité de Paris apposé sur
+                              le haut des deux premiers feuillets indique l'utilisation d'un papier
+                              timbré, support permettant d'authentifier l'acte juridique. Le timbre
+                              est répertorié ici : <bibl>Alexandre Devaux, Les papiers et parchemins
+                                 timbrés de France : Ancien Régime, 1673-1791, Lille, Imprimerie
+                                 Lefebvre-Ducrocq, 1911, p. 36.</bibl>
+                           </note>
+                        </support>
+                        <foliation>3 feuillets reliés en un cahier</foliation>
+                     </supportDesc>
+                  </objectDesc>
+                  <handDesc hands="7">
+                     <handNote scribe="clerc" scope="major">
+                        <locus from="f1" to="f6">f. 1-6</locus>
+                        <p>Clerc du commissaire Landelle ayant rédigé le document, main fréquemment
+                           présente dans les papiers du commissaire.</p>
+                     </handNote>
+                     <handNote scribeRef="#Landelle" scope="minor">
+                        <locus from="f1" to="f6">f. 1-6</locus>
+                        <p>Signature du commissaire, présente à chaque fin de déclaration par les
+                           dépositeurs et à chaque fin de page du document.</p>
+                     </handNote>
+                     <handNote scribeRef="#MarcellinCourtois" scope="minor">
+                        <locus from="f1" to="f2">f. 1-2</locus>
+                        <p>Signature de Marcelin Courtois, premier témoin. Signe à deux
+                           reprises.</p>
+                     </handNote>
+                     <handNote scribeRef="#JeanneDeBasseux" scope="minor">
+                        <locus from="2" to="3">f. 2-3</locus>
+                        <p>Signature de Jeanne de Basseux, victime du vol. Signe à deux
+                           reprises.</p>
+                     </handNote>
+                     <handNote scribeRef="#JeanDeBasseux" scope="minor">
+                        <locus from="4" to="5">f. 4-5</locus>
+                        <p>Signature de Jean de Basseux, père de la victime. Signe à deux
+                           reprises.</p>
+                     </handNote>
+                     <handNote scribeRef="#EtienneLeBon" scope="minor">
+                        <locus from="5" to="5">f. 5</locus>
+                        <p>Signature d'Étienne le Bon, sergent des gardes françaises. Signe une
+                           seule fois.</p>
+                     </handNote>
+                     <handNote scribeRef="#JeanGoudouin" scope="minor">
+                        <locus from="6" to="6">f. 6</locus>
+                        <p>Signature de Jean Goudouin, caporal de la garde de Paris. Signe une seule
+                           fois.</p>
+                     </handNote>
+                  </handDesc>
+               </physDesc>
+
+               <history>
+                  <origin>Juridiction du Châtelet de Paris</origin>
+                  <provenance>
+                     <p>Le document a été rédigé en avril 1786 lors de la comparution des
+                        particuliers ayant fait déclaration dans le cadre d'une tentative de vol
+                        devant la Comédie-Française. Le présent exemplaire a ensuite été conservé
+                        dans l'hôtel du commissaire de police en charge de l'affaire.</p>
+                     <p>La loi du 24 août 1790 marque la suppression de la juridiction du Châtelet
+                        et ses archives sont scellées. Elles sont conservées dès l'an V au Palais de
+                        Justice avant d'être transférées en 1847 au palais Soubise qui héberge alors
+                        les Archives du Royaume (actuelles Archives nationales). L'ensemble des
+                        documents, dont font partie les minutes des commissaires de police, forme la
+                        série Y des Archives nationales.</p>
+                     <listBibl>
+                        <head>Informations sur l'historique de conservation des archives du Châtelet
+                           et sur l'organisation de la série</head>
+                        <bibl xml:id="EtatSerieY-2001">
+                           <title level="a">État général de la série Y</title>
+                           <title level="m">Les Archives nationales. État général des fonds</title>
+                           <idno>http://www.archivesnationales.culture.gouv.fr/chan/chan/fonds/EGF/SA/SAPDF/Egfn-y.pdf</idno>
+                           <author><persName>Henri Gerbaud</persName> et <persName>Isabelle
+                                 Foucher</persName></author>
+                           <pubPlace>Paris</pubPlace>
+                           <publisher>Archives nationales de France</publisher>
+                           <date>1978 (mis à jour en 2001)</date>
+                           <biblScope unit="page">p. 2 de l'introduction</biblScope>
+                        </bibl>
+                        <bibl xml:id="RepertoireCommissaires-2013">
+                           <title level="u">Répertoire numérique des archives du Châtelet de Paris.
+                              Série Y. Tome 2 : les commissaires</title>
+                           <idno>
+                              http://www.archivesnationales.culture.gouv.fr/chan/chan/pdf/repertoire-Y-minutes-commissaires.pdf </idno>
+                           <author><persName>Henri Stein</persName>, revu par <persName>Michèle
+                                 Bimbenet-Privat</persName>, <persName>Jacques Dion</persName>,
+                                 <persName>Isabelle Foucher</persName> et <persName>Henri
+                                 Gerbaud</persName></author>
+                           <date>2013</date>
+                        </bibl>
+                     </listBibl>
+                  </provenance>
+                  <acquisition>
+                     <stamp notBefore="1848">
+                        <location>
+                           <note>A deux reprises, en marge gauche des première et troisième
+                              pages.</note>
+                        </location>
+                        <mentioned>Archives nationales</mentioned>
+                     </stamp>
+                  </acquisition>
+               </history>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <p>L'encodage de ce document a été réalisé à partir d'une transcription de la source qui se
+            veut respecter au mieux les variantes orthographiques du XVIIIe siècle. Aussi, la
+            déclaration d'entités dans une DTD permet de conserver la forme originale du texte tout
+            en proposant une version modernisée.</p>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <pb n="1"/>
+         <head>&Information; au sujet du vol de montre fait &à; la &demoiselle-1; de &bB;asseux et
+            dont est pr&é;venu le &nommé; <persName ref="#VincentLeTord">&leTord;</persName>
+            <date when="1786-04"> 7 &amp; 8 avril 1786</date>
+         </head>
+         <div n="1">
+            <p rend="margin-left">&Expédié; et &déposé; le 20.</p>
+            <p>Information faite par nous <persName ref="#PierreLandelle">Pierre Nicolas Eustache
+                  Landelle</persName>&virgule; avocat en parlement&virgule; &conseiller; du
+               Roi&virgule; &commissaire; au <orgName ref="#Chatelet">Ch&â;telet de
+               Paris</orgName>.</p>
+            <p>A la requête de Monsieur le Procureur du Roi &audit; &Châtelet; au sujet du vol fait
+               à la <persName ref="#JeanneDeBasseux">&demoiselle-1; &deBasseux;</persName> dans la
+               foule &à; la <placeName ref="#porteAmphitheatre">porte de
+                  l&apostrophe-1;amphit&h;&é;&â;tre</placeName> de la <placeName
+                  ref="#ComedieFrancaise">Com&é;die&tiret;&Française;</placeName> de sa <objectName
+                  ref="montreVolee">montre</objectName> &à; &boîte-1; d&apostrophe-1;or et dont est
+               pr&é;venu le nommé <persName ref="#VincentLeTord">Vincent &leTord;</persName>
+               graveur&virgule; suivant le proc&è;s&tiret;verbal par <persName ref="#PierreLandelle"
+                  >nous</persName> dressé &à; ce sujet le dix&tiret;sept mars &mille; sept cent
+               quatre&tiret-2;vingt&tiret;six &expédition-2; duquel a été par nous déposée au greffe
+               criminel &dudit; <orgName ref="#Chatelet">Ch&â;telet</orgName>.</p>
+            <p>En ex&é;cution de l’ordonnance de Monsieur le Lieutenant Criminel &audit; <orgName
+                  ref="#Chatelet">Ch&â;telet</orgName> mise sur &ladite; &expédition-1;.</p>
+            <p> En laquelle &Ii;nformation nous avons procédé comme il suit&deux-points;</p>
+         </div>
+         <div n="2" corresp="#MarcellinCourtois">
+            <p> Du vendredi sept avril &audit; an &mille; sept cent
+               quatre&tiret;vingt&tiret;six&virgule; neuf heures et demie du matin&virgule;
+                  <persName ref="#MarcellinCourtois">Marcellin Courtois</persName> agé de
+               soixante&tiret;deux ans&virgule; &Cc;hevalier de l’ordre &Rr;o&ïy;al et militaire de
+               &Saint;&tiret;Louis&virgule; &Dd;emeurant à Paris <address>
+                  <placeName ref="#rueFgMontmartre">&Rr;ue du
+                     &fF;aubourg&tiret;Montmartre</placeName>
+               </address>&virgule; &paroisse; &Saint;&tiret;Eustache &Nn;°13&virgule; assigné de
+               notre &ordonnance; par exploit de <persName ref="#Fayet">Fayet</persName> &huissier;
+               &audit; Ch&â;telet du jour d’hier dont il nous a representé la copie &à; lui laissée
+               lequel apr&è;s serment par lui &fait; de dire verité&virgule; que lecture lui a été
+               &faite; &dudit; proc&è;s&tiret;verbal&virgule; qu&apostrophe-1;il a dit
+               n&apostrophe-1;&ê;tre parent&virgule; allié&virgule; serviteur ni domestique des
+               parties.</p>
+            <p>A d&é;posé qu’il y a aujourd&apostrophe-2;hu&yi; trois semaines étant allé pour
+               entrer au spectacle du <placeName ref="#ComedieFrancaise"
+                  >&tT;h&é;&â;tre&tiret;&Français;</placeName>&virgule; il y trouva une tr&è;s
+               grande affluence de monde&virgule; ce qui ne le surpris point attendu qu’on
+               donn&oa;it la <term ref="#Figaro">pi&è;ce de &fF;igaro</term>. Qu’étant du c&ô;té du
+                  <placeName ref="#bureauDistributionBillets">bureau de distribution des billets
+                  d’amphith&é;&â;tre</placeName> il sentit que quelqu’un mett&oa;it la main
+                  <floatingText n="1" type="signature">
+                  <body>
+                     <div>
+                        <signed>
+                           <persName ref="#MarcellinCourtois">M Courtois</persName>
+                           <persName ref="#PierreLandelle">Landelle</persName>
+                        </signed>
+                     </div>
+                  </body>
+               </floatingText>
+               <pb n="2"/> sur le cordon de sa montre et essay&oa;it de la tirer. Qu&apostrophe-1;il
+               porta la sienne aussitôt sur &ledit; cordon&virgule; il y attrapa les doigts de la
+               main de celui qui tent&oa;it de lui enlever &sadite; montre mais que ne tenant que
+               l&apostrophe-2;extremité des doigts&virgule; ils s'&é;cha&p;p&è;rent de dedans sa
+               main. Qu&apostrophe-1;il se retourna &amp; vit à côté de lui un <persName
+                  ref="#VincentLeTord">jeune homme</persName> assez bien vêtu et assez bien de
+               figure &ayant; les cheveux blonds. Qu&apostrophe-1;il ne put suspecter que ce
+               jeune&virgule; n&apostrophe-1;y &ayant; que lui qui fut dans une position propre &à;
+               poser sa main sur &ledit; cordon. Que l’&ayant; <del rend="barré"><unclear
+                     reason="illegible" extent="3" unit="words"/></del> fixé&virgule; il vit le
+               jeune homme changer de couleur. Qu&apostrophe-1;&à; plusieurs fois même et &à;
+               quelques &minutes; de distance&virgule; il le fixa de nouveau &amp; le vît chaque
+               fois changer de couleur. Que ce jeune homme alors changea de place et <unclear
+                  reason="illegible" extent="3" unit="char"/> se placer &devant; lui d&é;posant en
+               laissant entre eux deux ou trois personnes. Vit le d&é;posant arriver un <persName
+                  ref="#JeanDeBasseux">&particulier;</persName> avec une <persName
+                  ref="#JeanneDeBasseux">&demoiselle-2;</persName> qu’un <persName
+                  ref="#EtienneLeBon">&sergent; des &Gg;ardes fran&ç;&oa;ises</persName> fit placer.
+               Qu&apostrophe-1;au moment et presque &à; l&apostrophe-1;instant de leur entrée lui
+               d&é;posant vit un mouvement &amp; entendit une certaine rumeur <unclear
+                  reason="illegible" extent="4" unit="char"/> que &ladite; &demoiselle-2; qui
+               accompagnait &ledit;&particulier; se plaign&oa;it de ce qu’on lui av&oa;it volé sa
+                  <objectName ref="#montreVolee">montre</objectName>; remarqua en effet le
+               d&é;posant qu’elle n’avait plus qu’à son côté qu’une petite cha&î;ne d’acier.
+               &qQ;u’ayant &aperçu; le m&ê;me jeune homme prier plusieurs fois qu’on le laisse aller
+               étant sur le point de se trouver mal&virgule; il le saisit par le collet en
+                  disant&deux-points;<said aloud="true" resp="#MarcellinCourtois">Ce ne peut être
+                  que ce jeune homme</said> &amp; aussitôt sentit le d&é;posant tomber quelque chose
+               sur son pied&virgule; qu’&ayant; regardé par terre ainsi que d&apostrophe-1;autres
+               personnes il vît une montre qu&apostrophe-1;il ramassa et pr&é;senta au &particulier;
+               qui accompagn&oa;it &ladite; &demoiselle-2; &amp; qui ainsi qu’ils reconnurent
+               &ladite; montre &amp; qu&apostrophe-1;il fut mis entre les mains des &Gg;ardes
+               fran&ç;&oa;ises.</p>
+            <p>Est tout ce qu&apostrophe-1;il a dit &savoir;&point; Lecture à lui faite de sa
+               d&é;position&virgule; il a dit icelle contenir verité&virgule; y a persisté&virgule;
+               n’a requis taxe et a signé apr&è;s qu&apostrophe-1;il a été ra&ïy;é mots <unclear
+                  reason="illegible eccentric_ductus" extent="3" unit="words"/>.</p>
+            <signed>
+               <persName ref="#MarcellinCourtois">M Courtois</persName>
+               <persName ref="#PierreLandelle">Landelle</persName>
+            </signed>
+         </div>
+         <div n="3" corresp="#JeanneDeBasseux">
+            <p rend="margin-left">2.</p>
+            <p><persName ref="#JeanneDeBasseux">Jeanne Louise De Basseux</persName> &â;gée de quinze
+               ans passés demeurante &à; Paris <address>
+                  <placeName ref="#rueStThomasLouvre">rue &Saint;&tiret;Thomas&tiret;du&tiret;Louvre
+                     &Nn;°23</placeName>
+               </address> &paroisse; &Saint;&tiret;Germain&tiret;L&apostrophe-1;&aA;uxerrois
+                  <floatingText n="2" type="signature">
+                  <body>
+                     <div>
+                        <signed>
+                           <persName ref="#JeanneDeBasseux">ml debasseux</persName>
+                           <persName ref="#PierreLandelle">Landelle</persName>
+                        </signed>
+                     </div>
+                  </body>
+               </floatingText>
+               <pb n="3"/> chez &ledit; son <persName ref="#JeanDeBasseux"
+               >p&è;re</persName>&virgule; premier valet de pied chez &Madame; la Duchesse
+               d’Orl&é;ans&virgule; assigné de notre ordonnance par exploit &dudit; <persName
+                  ref="#Fayet">&fF;ayet</persName> huissier &audit; Ch&â;telet du jour
+               d&apostrophe-1;hier dont il nous a representé la copie &à;
+                     <corr><orig>lui</orig><corr>elle</corr></corr> laissée lequel apr&è;s serment
+               par elle fait de dire verité&virgule; que lecture lu&yi; a &é;té faite &dudit;
+               proc&è;s&tiret;verbal et qu&apostrophe-1;elle a dit n&apostrophe-1;être
+               parente&virgule; alliée&virgule; servante ni domestique des parties.</p>
+            <p> A deposé qu’il y a aujourd’hu&yi; trois semaines&virgule; elle fut avec son p&è;re
+               pour aller voir la <term ref="#Figaro">pi&è;ce de &fF;igaro</term> au <placeName
+                  ref="#ComedieFrancaise">spectacle fran&ç;&oa;is</placeName>. Qu’étant au c&ô;té de
+               la <placeName ref="#porteAmphitheatre">porte d’entrée de l’amphiteatre</placeName>
+               &dudit; spectacle&virgule; elle y fut très pressée&virgule; qu&apostrophe-1;au moment
+               o&ù; on ouvrit la porte pour entrer elle se disposant &à; le faire&virgule; elle
+               porta sa main sur la cha&î;ne de sa <objectName ref="#montreVolee"
+                  >montre</objectName> pour emp&ê;cher qu&apostrophe-1;on ne la lui prit mais
+               qu&apostrophe-1;elle ne sentît plus &ladite; cha&î;ne &amp; s’appercut qu’on lui
+               av&oa;it volé &sadite; montre. Qu’elle s’écria aussitôt en disant au <persName
+                  ref="#JeanDeBasseux">&sieur; son p&è;re</persName> qu’on lui av&oa;it volé
+               &sadite; <objectName ref="#montreVolee">montre</objectName>&virgule; ce qui fit une
+               petite rumeur. Qu’un <persName ref="#MarcellinCourtois">monsieur Chevalier de
+                  &Saint;&tiret;Louis</persName> qui &é;t&oa;it près d’eux&virgule; vit en portant
+               la main sur un <persName ref="#VincentLeTord">jeune homme</persName> qui &é;t&oa;it
+               aussi près d’eux, <said aloud="true" resp="#MarcellinCourtois">ce ne peut être que ce
+                  jeune homme là qui vous a volé, car il a voulu prendre la mienne</said>. Que
+               dans le même moment ce <persName ref="#MarcellinCourtois">&monsieur; &chevalier; de
+                  &Saint;&tiret;Louis</persName> dit <said aloud="true" resp="#MarcellinCourtois"
+                  >quelque chose vient de tomber sur mon pied</said> &amp; &ayant; regardé dit <said
+                  aloud="true" resp="#MarcellinCourtois">c’est une <objectName ref="#montreVolee"
+                     >montre</objectName></said>&virgule; la ramassa que l’ayant pr&é;sentée &à;
+                  <persName ref="#JeanneDeBasseux">elle d&é;posante </persName>ainsi qu’&audit;
+                  <persName ref="#JeanDeBasseux">&sieur; son p&è;re</persName>&virgule; ils la
+               reconnurent pour être celle d’elle d&é;posante. Que &sadite; <objectName
+                  ref="#montreVolee">montre</objectName> est à &boîte-2; d’or unie guillochée sur
+               les bords&virgule; à cadran d’émail&virgule; &aiguilles; d’or&virgule; portant <del
+                  rend="barré">le nom</del> sur &ledit; cordon le nom de fr&è;res
+               &lL;eclerc&virgule; &ladite; montre suspendue &à; une cha&î;ne d’acier &à; trois
+               branches dont deux en perles et un m&é;daillon entour&é; de perles &amp; deux
+               porte&tiret;mousquetons à l’un desquels tient une clef de cuivre &amp; un &à;
+               cassolette en œuf aussi de cuivre à l’autre.
+                     Qu’<corr><orig>lui</orig><corr>elle</corr></corr> fut conduit dans le corps de
+               garde des &Gg;ardes fran&ç;&oa;ises o&ù; <persName ref="#VincentLeTord">ce jeune
+                  homme</persName> se mit &à; genoux &amp; la pria de prier le &sieur; son p&è;re de
+               le laisser aller.</p>
+            <p>Est tout ce qu’elle a dit &savoir;&point;Lecture &à; elle &faite; de la
+               &déposition;&virgule; elle a dit icelle contenir verité&virgule; y a
+               persisté&virgule; n’a requis taxe et a signé.</p>
+            <signed>
+               <persName ref="#PierreLandelle">Landelle</persName>
+               <persName ref="#JeanneDeBasseux"> ml debasseux</persName>
+            </signed>
+         </div>
+         <pb n="4"/>
+         <div n="4" corresp="#JeanDeBasseux">
+            <p rend="margin-left">3</p>
+            <p><persName ref="#JeanDeBasseux">Jean&tiret;&Baptiste; &Dd;e Basseux du
+                  Dorsille</persName> &â;gé de quarante&tiret;six ans&virgule; premier valet de pied
+               de &Madame; la Duchesse d’Orl&é;ans &demeurant;<address>
+                  <placeName ref="#rueStThomasLouvre">rue
+                     &Saint;&tiret;Thomas&tiret;du&tiret;Louvre</placeName>
+               </address> &paroisse; &Saint;&tiret;Germain&tiret;l’Auxerrois&virgule; assigné de
+               notre ordonnance par exploit &dudit; <persName ref="#Fayet">&fF;ayet</persName> du
+               jourd’hier dont il nous a representé la copie à lui laissée&virgule; lequel apr&è;s
+               serment par lui fait de dire verité&virgule; que lecture lui a été faite &dudit;
+               procès&tiret;verbal et qu&apostrophe-1;il a declaré n&apostrophe-1;être
+               parent&virgule; allié&virgule; serviteur ni domestique des parties.</p>
+            <p> A d&é;pos&é; qu’il y a aujourd’hu&yi; trois semaines&virgule; d&é;sirant voir la
+                  <term ref="#Figaro">pi&è;ce de &fF;igaro</term> qu’on donn&oa;it &ledit; jour au
+                  <placeName ref="#ComedieFrancaise">spectacle fran&ç;&oa;is</placeName> et &ayant;
+               eu un billet d’acteur pour entrer &audit; spectacle&virgule; il fut avec<persName
+                  ref="#JeanneDeBasseux"> sa fille pr&é;c&é;dente t&é;moin</persName> pour entrer
+               &audit; spectacle; qu&apostrophe-1;il trouva sous les galeries une affluence
+               consid&é;rable de monde. Qu&apostrophe-1;ils s’approch&è;rent de la <placeName
+                  ref="#porteAmphitheatre">porte d’entrée de l’amphit&h;&é;&â;tre</placeName> en
+               troisi&è;mes loges &pour; entrer les premiers; qu’au moment de l’ouverture de
+                  <placeName ref="#porteAmphitheatre">&ladite; porte</placeName>&virgule; se
+               disposant &à; entrer il dit à <persName ref="#JeanneDeBasseux">&sadite;
+                  fille</persName> de prendre garde &à; sa <objectName ref="#montreVolee"
+                  >montre</objectName>&virgule; que &sadite; fille porta la main aussitôt à la
+               cha&î;ne d’icelle &amp; s’écria&deux-points; <said aloud="true"
+                  resp="#JeanneDeBasseux">papa on me <objectName ref="#montreVolee">l</objectName>’a
+                  prise</said>. Qu’au m&ê;me moment cela fit une petite rumeur qu’un <persName
+                  ref="#MarcellinCourtois">chevalier de &Saint;&tiret;Louis</persName>qu’il &sût;
+               ensuite se nommer Courtois porta la main sur un <persName ref="#VincentLeTord">jeune
+                  homme</persName> qui &é;t&oa;it à côté d’ eux en disant&deux-points; <said
+                  aloud="true" resp="#MarcellinCourtois">il ne peut y avoir que ce <persName
+                     ref="#VincentLeTord">jeune homme</persName> qui <objectName ref="#montreVolee"
+                     >l</objectName>’ait prise car il a voulu prendre la mienne &amp; a changé de
+                  place depuis</said>. Qu’en disant cela il dit&deux-points;<said aloud="true"
+                  resp="#MarcellinCourtois">ah il vient de <objectName ref="#montreVolee"
+                     >la</objectName> laisser tomber sur mon pied</said>, se baissa&virgule; ramassa
+               en effet une <objectName ref="#montreVolee">montre</objectName> qu&apostrophe-1;il
+               repr&é;senta à <persName ref="#JeanDeBasseux">lui d&é;posant</persName> et &à;
+                  <persName ref="#JeanneDeBasseux">sa fille</persName> qui la reconnurent pour être
+                  <objectName ref="#montreVolee">celle</objectName> de &sadite; fille. Que ce
+                  <persName ref="#VincentLeTord">jeune homme</persName> fut conduit dans le corps de
+               garde des gardes fran&ç;&oa;ises o&ù; il se mit à genoux en priant de le laisser
+               aller de ne lu&yi; pas <choice>
+                  <sic>de</sic>
+                  <corr/>
+               </choice> faire de peine. Que &ladite;<objectName ref="#montreVolee">
+                  montre</objectName> est &à; &boîte-2; d’or unie et guillochée sur les bords &amp;
+               porte sur le cadran d’émail le nom de fr&è;res &lL;eclerc et qu’elle est suspendue
+               &à; une cha&î;ne d’acier.</p>
+            <p>Est tout ce qu’il a dit &savoir;&point; &lL;ecture a lui <floatingText n="3"
+                  type="signature">
+                  <body>
+                     <div>
+                        <signed>
+                           <persName ref="#JeanDeBasseux">deBasseux</persName>
+                           <persName ref="#PierreLandelle">Landelle</persName>
+                        </signed>
+                     </div>
+                  </body>
+               </floatingText>
+               <pb n="5"/> faite de sa &déposition;&virgule; il a dit icelle contenir
+               verité&virgule; y a persisté&virgule; n’a requis taxe et a signé.</p>
+            <signed>
+               <persName ref="#JeanDeBasseux">deBasseux</persName>
+               <persName ref="#PierreLandelle">Landelle</persName>
+            </signed>
+         </div>
+         <div n="5" corresp="#EtienneLeBon">
+            <p rend="margin-left">4.</p>
+            <p><persName ref="#EtienneLeBon">Etienne Le Bon</persName> &â;g&é; de
+               cinquante&tiret;huit ans&virgule; sergent des gardes fran&ç;&oa;ises&virgule;
+               compagnie de Perrot&virgule; &demeurant; &à; la ca&zs;erne de la <address>
+                  <placeName ref="#rueSteGenevieve">rue &Sainte;&tiret;&Geneviève;</placeName>
+               </address> &paroisse; &Saint;&tiret;M&é;dard&virgule; assigné de notre ordonnance par
+               exploit &dudit; <persName ref="#Fayet">&fF;ayet</persName> au jour d’hier dont il
+               nous a representé la copie &a; lui laissée&virgule; lequel apr&è;s serment par lui
+               fait de dire v&é;rité que lecture lu&yi; a été faite &dudit; procès&tiret;verbal
+               &amp; qu’il a dit n&apostrophe-1;être parent&virgule; allié&virgule; serviteur ni
+               domestique des parties.</p>
+            <p>A d&é;posé qu&apostrophe-1;il y a aujourd’hu&yi; trois semaines&virgule; étant de
+               poste au <placeName ref="#ComedieFrancaise"
+               >&tT;hé&â;tre&tiret;&Français;</placeName>&virgule; il entendit au moment de
+               l’ouverture des portes pour entrer dans la salle une rumeur du côté de la <placeName
+                  ref="#porteAmphitheatre">porte d’entrée de l’amphit&h;&é;&â;tre</placeName> &amp;
+               troisi&è;mes loges &amp; qu’on lui amena presqu’aussitôt de son corps de garde
+                  <persName ref="#VincentLeTord">un jeune homme</persName> qu’on lui dit avoir volé
+               une <objectName ref="#montreVolee">montre</objectName> d’or &à; une <persName
+                  ref="#JeanneDeBasseux">&demoiselle-2;</persName> qui vient avec <persName
+                  ref="#VincentLeTord">&ledit; jeune homme</persName> &audit; corps de garde, et
+               laquelle ét&oa;it accompagnée d’un <persName ref="#JeanDeBasseux"
+                  >&particulier;</persName> qui dit &ê;tre son p&è;re et d’un <persName
+                  ref="#MarcellinCourtois">&chevalier; de &Saint;&tiret;Louis</persName>. Entendit
+               &ledit; <persName ref="#MarcellinCourtois">&chevalier;</persName> dire que <persName
+                  ref="#VincentLeTord">ce jeune homme</persName>av&oa;it voulu lui prendre la sienne
+               &amp; qu’au moment où il l’avoit arr&ê;té&virgule; il av&oa;it laissé tomber
+                  <objectName ref="#montreVolee">celle</objectName> que &ladite; <persName
+                  ref="#JeanneDeBasseux">&demoiselle-2;</persName> r&é;clam&oa;it sur le pied de
+                  <persName ref="#MarcellinCourtois">lui</persName> &chevalier; de
+               &Saint;&tiret;Louis. Que le d&é;posant envo&iy;a chercher une escouade de la garde de
+               Paris &amp; remit <persName ref="#VincentLeTord">&ledit; jeune homme</persName> au
+                  <persName ref="#JeanGoudouin">caporal</persName> qui la command&oa;it &amp; le
+               suivit jusque par &devant; <persName ref="#PierreLandelle">nous</persName> avec
+                  <persName ref="#MarcellinCourtois">&ledit; &chevalier; de
+                  &Saint;&tiret;Louis</persName> &amp; <persName ref="#JeanneDeBasseux">sa
+                  fille</persName>.</p>
+            <p>Est tout ce qu’il a dit &savoir;&point; &lL;ecture à lui &faite; de sa
+               &déposition;&virgule; il a dit icelle contenir verité&virgule; y a persisté&virgule;
+               a requis taxe que nous avons fixée à quarante &sous; et a signé.</p>
+            <signed>
+               <persName ref="#EtienneLeBon">LeBon</persName>
+               <persName ref="#PierreLandelle">Landelle</persName>
+            </signed>
+         </div>
+         <pb n="6"/>
+         <div n="6" corresp="#JeanGoudouin">
+            <p>Lendemain&virgule; samedi huit &dudit; mois d’avril&virgule; dix heures du
+               matin&point; </p>
+            <p rend="margin-left">5</p>
+            <p><persName ref="#JeanGoudouin">Jean &Goudouin;</persName>&virgule; &â;gé de quarante
+               deux ans&virgule; caporal de la garde de Paris&virgule; demeurant<address>
+                  <placeName ref="#rueStAntoine">rue &Saint;&tiret;Antoine</placeName>
+               </address>&virgule; &paroisse; &Saint;&tiret;Paul&virgule; assigné en notre
+               ordonnance par exploit &dudit; <persName ref="#Fayet">Fayet</persName> du six
+               pr&é;sent mois dont il nous a repr&é;senté la copie &à; lui laissée&virgule; lequel
+               apr&è;s serment par lui fait de dire v&é;rité que lecture lui a été faite &dudit;
+               procès&tiret;verbal et qu’il a dit n’être parent&virgule; allié&virgule; serviteur ni
+               domestique des parties.</p>
+            <p>A d&é;posé qu’il y a eu hier trois semaines&virgule; étant de <placeName
+                  ref="#posteStMichel">poste place et porte
+               &Saint;&tiret;Michel</placeName>&virgule; il fut requis de se transporter vers les
+               quatre heures et demie environ de l’apr&è;s&tiret;mid&yi; au corps de garde des
+               gardes fran&ç;&oa;ises établi au <placeName ref="#ComedieFrancaise"
+                  >&tT;h&é;&â;tre&tiret;&Français;</placeName>. Qu’y étant arrivé&virgule; le
+                  <persName ref="#EtienneLeBon">sergent</persName> qui command&oa;it &audit; corps
+               de garde lui remit un <persName ref="#VincentLeTord">jeune homme</persName> blond de
+               cheveux et &assez; bien <unclear reason="illegible eccentric_ductus" extent="6"
+                  unit="char"/>&virgule; qu’il lui dit avoir été amené à son corps de garde pour
+               avoir volé une <objectName ref="#montreVolee">montre</objectName> à une <persName
+                  ref="#JeanneDeBasseux">&demoiselle-2;</persName> que <persName ref="#JeanGoudouin"
+                  >lui d&é;posant</persName> trouva dans le dit corps de garde avec deux
+               &particuliers; dont un se dit être le <persName ref="#JeanDeBasseux">p&è;re de
+                  &ladite; &demoiselle-2;</persName> et l’autre ét&oa;it un <persName
+                  ref="#MarcellinCourtois">chevalier de &Saint;&tiret;Louis</persName>. Qu’il se
+               saisit <persName ref="#VincentLeTord">&dudit; jeune homme</persName> &amp; le
+               conduisit par &devant; <persName ref="#PierreLandelle">nous</persName>&virgule;
+               accompagné <persName ref="#EtienneLeBon">&dudit; sergent des gardes
+                  fran&ç;&oa;ises</persName>&virgule; de <persName ref="#JeanneDeBasseux">&ladite;
+                  &demoiselle-2;</persName>&virgule; de <persName ref="#JeanDeBasseux">son
+                  p&è;re</persName> et <persName ref="#MarcellinCourtois">&dudit; chevalier de
+                  &Saint;&tiret;Louis</persName>. Entendit le&espace;dit <persName
+                  ref="#MarcellinCourtois">&chevalier; de &Saint;&tiret;Louis</persName> dire que
+                  <persName ref="#VincentLeTord">ce jeune homme</persName> av&oa;it tenté de lui
+               prendre sa montre &amp; qu’au moment où il <persName ref="#MarcellinCourtois"
+                  >l</persName>’av&oa;it arrêté&virgule; il av&oa;it laissé tomber sur le pied
+                  <unclear reason="illegible" extent="5" unit="char"/> &chevalier; de
+               &Saint;&tiret;Louis une <objectName ref="#montreVolee">montre</objectName> qui
+               av&oa;it été reconnue par &ladite; <persName ref="#JeanneDeBasseux"
+                  >&demoiselle-2;</persName> &pour; être &à; elle.</p>
+            <p> Est tout ce qu’il a dit &savoir;&point; &lL;ecture à lui &faite; de sa
+               d&é;position&virgule; il a dit icelle contenir v&é;rité&virgule; y a
+               persisté&virgule; a requis taxe que nous avons fixée à vingt cinq &sous; et a
+               signé.</p>
+            <signed>
+               <persName ref="#JeanGoudouin">Goudouin</persName>
+               <persName ref="#PierreLandelle">Landelle</persName>
+            </signed>
+         </div>
+      </body>
+   </text>
+   <standOff>
+      <listPlace>
+         <place xml:id="ComedieFrancaise">
+            <placeName>Comédie-Française</placeName>
+            <note>Actuel théâtre de l'Odéon dans le 6e arrondissement de Paris. Les Comédiens s'y
+               installent en 1782 après être restés une dizaine d'années au théâtre des Tuileries,
+               attenant la rénovation de leur ancienne salle ou la construction d'une
+               nouvelle.</note>
+         </place>
+         <place xml:id="porteAmphitheatre">
+            <placeName>Porte d'entrée de l'amphithéâtre</placeName>
+            <note>Cette porte est située sur un des côtés de la façade principale du théâtre, sous
+               les arcades du batiment. Voir le Plan du rez-de-chaussée du théâtre de l’Odéon, tiré
+               de <bibl>Peyre fils, Projets de reconstruction de la salle de l’Odéon avec les plans
+                  originaires de la salle du Théâtre-Français, Paris, Firmin Didot, 1819,
+                  s.p.</bibl>
+            </note>
+         </place>
+         <place xml:id="bureauDistributionBillets">
+            <placeName>Bureau de distribution des billets de l'amphithéâtre</placeName>
+            <note>située sur un des côtés de la façade principale du théâtre, sous les arcades du
+               batiment. Voir le Plan du rez-de-chaussée du théâtre de l’Odéon, tiré de <bibl>Peyre
+                  fils, Projets de reconstruction de la salle de l’Odéon avec les plans originaires
+                  de la salle du Théâtre-Français, Paris, Firmin Didot, 1819, s.p.</bibl></note>
+         </place>
+         <place xml:id="rueSteGenevieve">
+            <placeName>Rue Sainte-Geneviève</placeName>
+            <note>Située dans le quartier Saint-Benoît.</note>
+         </place>
+         <place xml:id="rueStThomasLouvre">
+            <placeName>Rue Saint-Thomas du Louvre</placeName>
+            <note>Située dans le quartier du Palais-Royal.</note>
+         </place>
+         <place xml:id="rueStAntoine">
+            <placeName>Rue Saint-Antoine</placeName>
+            <note>Située dans le quartier Saint-Paul.</note>
+         </place>
+         <place xml:id="posteStMichel">
+            <placeName>Place et porte Saint-Michel</placeName>
+            <note>Emplacement d'une escouade de la garde de Paris dans les années 1780, situé à
+               proximité du théâtre de la Comédie-Française.</note>
+         </place>
+         <place xml:id="rueFgMontmartre">
+            <placeName>Rue du Faubourg-Montmarte</placeName>
+            <note>Située dans le quartier de Montmartre.</note>
+         </place>
+      </listPlace>
+      <listPerson>
+         <person xml:id="PierreLandelle">
+            <persName>Pierre Nicolas Eustache Landelle</persName>
+            <note>Commissaire de police dans le quartier du Luxembourg entre 1773 et 1789.</note>
+         </person>
+         <person xml:id="JeanneDeBasseux">
+            <persName>Jeanne-Louise de Basseux</persName>
+            <note>Spectatrice victime de la tentative de vol.</note>
+         </person>
+         <person xml:id="JeanDeBasseux">
+            <persName>Jean-Baptiste de Basseux</persName>
+            <note>Père de la victime de la tentative de vol.</note>
+         </person>
+         <person xml:id="MarcellinCourtois">
+            <persName>Marcellin Courtois</persName>
+            <note>Spectateur qui remarque et interpelle le voleur, également victime d'une première
+               tentative de vol.</note>
+         </person>
+         <person xml:id="VincentLeTord">
+            <persName>Vincent le Tord</persName>
+            <note>Voleur interpellé. On trouve la forme "Le Tort" dans le document mais le
+               particulier signe "Le Tord" dans son procès-verbal d'arrestation (voir AN, Y 14038B,
+               17 mars 1786). </note>
+         </person>
+         <person xml:id="EtienneLeBon">
+            <persName>Etienne le Bon</persName>
+            <note>Sergent des gardes françaises, en poste à la Comédie-Française le soir du vol.
+               L'interpellé lui est apporté.</note>
+         </person>
+         <person xml:id="JeanGoudouin">
+            <persName>Jean Goudouin</persName>
+            <note>Caporal de la garde de Paris, en poste place et porte Saint-Michel. L'interpellé
+               lui est remis par le sergent des gardes françaises pour le conduire jusqu'à l'hôtel
+               du commissaire de police Landelle.</note>
+         </person>
+         <person xml:id="Fayet">
+            <persName>Fayet</persName>
+            <note>Huissier</note>
+         </person>
+      </listPerson>
+      <listEvent>
+         <event xml:id="Figaro">
+            <label>Représentation du Mariage de Figaro de Beaumarchais</label>
+            <note>Représentation d'une pièce qui est l'un des plus grands succès de la
+               Comédie-Française dans le dernier tiers du XVIIIe siècle. L'engouement du public qui
+               se presse pour voir la pièce favorise la présence des voleurs de foule.</note>
+         </event>
+      </listEvent>
+      <listOrg>
+         <org xml:id="Chatelet">
+            <orgName>Châtelet de Paris</orgName>
+            <note>Institution qui a juridiction sur Paris et ses alentours, et dont dépendent les
+               commissaires de police, chargés d'assurer la sûreté dans la capitale.</note>
+         </org>
+         <org xml:id="HotelLandelle">
+            <orgName>Hôtel du commissaire Landelle</orgName>
+            <note>Hôtel d’Hambourg situé rue des Boucheries dans le quartier du Luxembourg où
+               Landelle exerce son office de 1776 à 1789. <bibl
+                  corresp="#RepertoireCommissaires-2013"/></note>
+         </org>
+      </listOrg>
+      <listObject>
+         <object xml:id="montreVolee">
+            <objectIdentifier>
+               <objectName>Montre</objectName>
+            </objectIdentifier>
+            <note> Montre précieuse en or, guillochée, accrochée au jupon de Jeanne-Louise de
+               Basseux, objet de la présente déclaration et convointée par le voleur Vincent le
+               Tord.</note>
+         </object>
+      </listObject>
+   </standOff>
+</TEI>
