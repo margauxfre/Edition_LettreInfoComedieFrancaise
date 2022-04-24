@@ -102,22 +102,22 @@
                                 transcription du document original et une version correspondant aux
                                 normes de l'orthographe contemporaine. En ce sens, la transformation
                                 vers le HTML tend à faire ressortir au mieux les règles de
-                                transcription et d'édition suivies ainsi que de respecter l'aspect
+                                transcription et d'édition suivies tout en respectant l'aspect
                                 matériel de la source : <ul>
                                     <li>Chaque changement de page est mentionné.</li>
                                     <li>Les mots barrés dans le texte sont balisés par l'élément
-                                        HTML del</li>
+                                        HTML <code>del</code></li>
                                     <li>Les passages illisibles sont signalés entre crochets et en
                                         italique. Le nombre de caractères ou de mots manquants est
-                                        précisé. Si le passage illisible est barré, sa mention dans
-                                        la transcription l'est également.</li>
+                                        précisé. Si le passage illisible est barré, il l'est
+                                        également dans la transcription.</li>
                                     <li>Les signatures présentes dans le document apparaissent à
                                         droite, en italique.</li>
-                                    <li>Les abréviations en exposant sont conservés dans la
+                                    <li>Les abréviations en exposant sont conservées dans la
                                         transcription.</li>
                                     <li>Les exclamations des déclarants qui n'ont pas été
-                                        transcrites dans une forme indirecte par le clerc sont
-                                        marquées par l'ajout de guillemets.</li>
+                                        transcrites dans une forme indirecte par le clerc du
+                                        commissaire sont marquées par l'ajout de guillemets.</li>
                                 </ul>
                             </p>
                         </div>
@@ -320,7 +320,6 @@
                                         </xsl:if>
                                     </xsl:for-each>
                                 </xsl:element>
-
                             </xsl:for-each>
                         </xsl:element>
                     </div>
@@ -392,7 +391,7 @@
             </html>
         </xsl:result-document>
 
-        <!-- page pour afficher le texte dans sa version diplomatique -->
+        <!-- page pour afficher le texte dans sa version originale -->
         <xsl:result-document href="{$path_texte_diplomatique}" method="html" indent="yes">
             <html>
                 <head>
@@ -455,7 +454,7 @@
                             les individus n'interviennent pas automatiquement au même moment ni même
                             ne se croisent sur le terrain. Aussi, ce tableau listant les individus
                             mentionnés par chaque comparant montre que, dans le cas présent, les
-                            individus se sont pratiquement tous au moins aperçus. Les noms sont
+                            individus se sont pratiquement tous au moins aperçus. Les noms
                             apparaissent dans l'ordre de mention des individus par chacun.</p>
                         <table class="table table-bordered table-striped table-hover">
                             <th class="table-dark"> Nom du déclarant</th>
@@ -476,8 +475,8 @@
                                             </xsl:for-each>
                                         </td>
                                         <td>
-                                            <!-- on récupère les persName présents dans chaque div[@corresp] en les groupant par leur attribut ref afin de dédoulonner-->
-                                            <!-- on ne sélectionne pas les mentions de Fayetet Landelle, qui ne sont pas présents lors de l'évènement -->
+                                            <!-- on récupère les persName présents dans chaque div[@corresp] en les groupant par leur attribut @ref afin de dédoulonner-->
+                                            <!-- on ne sélectionne pas les mentions de Fayet et Landelle, qui ne sont pas présents lors de l'évènement -->
                                             <xsl:for-each-group
                                                 select=".//persName[@ref != '#Fayet' and @ref != '#PierreLandelle']"
                                                 group-by="@ref">
@@ -495,8 +494,6 @@
                                                   <xsl:otherwise>
                                                   <xsl:value-of select="persName"/>
                                                   </xsl:otherwise>
-
-
                                                   </xsl:choose>
                                                 </xsl:for-each>
                                                 <xsl:if test="position() != last()">
@@ -709,7 +706,7 @@
         <br/>
     </xsl:template>
 
-    <!-- pour afficher sur le côté quel individu est en train de faire sa déclaration devant le commissaire -->
+    <!-- pour afficher au centre quel individu est en train de faire sa déclaration devant le commissaire -->
     <xsl:template match="div[@corresp]" mode="#all">
         <xsl:variable name="refPerson">
             <xsl:value-of select="./replace(@corresp, '#', '')"/>
